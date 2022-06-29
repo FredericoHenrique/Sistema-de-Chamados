@@ -8,14 +8,14 @@ $categoria = str_replace('#', '-', $_POST['categoria']);
 $descricao = str_replace('#', '-', $_POST['descricao']);
 
 // abertura do arquivo
-$arquivo = fopen('arquivo.txt', 'a'); 
+$arquivo = fopen('../../../projetos/Sistema chamados/arquivo.txt', 'a');
 
 // difinindo a escrita
-$texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' . $descricao . PHP_EOL; 
+$texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' . $descricao . PHP_EOL;
 
 // escrevendo no arquivo
-fwrite($arquivo, $texto); 
+fwrite($arquivo, $texto);
 
 // fechando o arquivo
-fclose($arquivo); 
+fclose($arquivo);
 header('Location: abrir_chamado.php');

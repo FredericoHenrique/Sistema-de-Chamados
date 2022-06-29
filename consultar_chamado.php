@@ -1,10 +1,11 @@
-<?php require_once "validador_acesso.php";?>
-<?php
+<?php require_once "validador_acesso.php"; ?>
 
+
+<?php
 $chamados = array();
 
 //abrir o arquivo
-$arquivo = fopen('arquivo.txt', 'r');
+$arquivo = fopen('../../../projetos/Sistema chamados/arquivo.txt', 'r');
 
 while (!feof($arquivo)) {
   $registro = fgets($arquivo);
@@ -19,6 +20,7 @@ fclose($arquivo);
 <!--
         Bootstrap v4.0.0
     -->
+
 <head>
   <meta charset="utf-8" />
   <title>Projeto Chamados - Help Desk</title>
@@ -39,7 +41,7 @@ fclose($arquivo);
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
       <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-     Projeto Chamados - Help Desk
+      Projeto Chamados - Help Desk
     </a>
 
     <ul class="navbar-nav">
@@ -61,9 +63,13 @@ fclose($arquivo);
 
           <div class="card-body">
 
-            <? foreach ($chamados as $chamado) { ?>
+
+
+            <?php foreach ($chamados as $chamado) { ?>
 
               <?php
+
+              $teste;
 
               $chamado_dados = explode('#', $chamado);
 
