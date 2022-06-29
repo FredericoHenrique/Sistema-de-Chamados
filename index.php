@@ -1,4 +1,4 @@
-<?=require_once "validador_acesso.php";?>
+<?php require_once "validador_acesso.php"; ?>
 
 <html>
 
@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <title>Projeto Chamados - Help Desk</title>
 
-    <!--
+  <!--
         Bootstrap v4.0.0
     -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,8 +24,8 @@
 
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-      <img src="imagem/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      App Help Desk
+      <img src="imagens/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Projeto Chamados - Help Desk
     </a>
   </nav>
 
@@ -38,7 +38,7 @@
             Login
           </div>
           <div class="card-body">
-            <form action="valida_login.php" method="post">
+            <form action="validar_login.php" method="post">
               <div class="form-group">
                 <input name="email" type="email" class="form-control" placeholder="E-mail">
               </div>
