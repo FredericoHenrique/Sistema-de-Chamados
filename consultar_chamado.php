@@ -1,7 +1,6 @@
 <?php require_once "validador_acesso.php"; ?>
-
-
 <?php
+
 $chamados = array();
 
 //abrir o arquivo
@@ -63,13 +62,9 @@ fclose($arquivo);
 
           <div class="card-body">
 
-
-
-            <?php foreach ($chamados as $chamado) { ?>
+            <? foreach ($chamados as $chamado) { ?>
 
               <?php
-
-              $teste;
 
               $chamado_dados = explode('#', $chamado);
 
@@ -78,6 +73,7 @@ fclose($arquivo);
                   continue;
                 }
               }
+
               if (count($chamado_dados) < 3) {
                 continue;
               }
