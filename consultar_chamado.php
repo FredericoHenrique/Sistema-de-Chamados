@@ -71,6 +71,7 @@ fclose($arquivo);
               if ($_SESSION['perfil_id'] == 2) {
                 if ($_SESSION['id'] != $chamado_dados[0]) {
                   continue;
+                  
                 }
               }
 
